@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    image: nodejs_helloworld_image
+    ports:
+      - "300:3000"
+    container_name: nodejs_helloworld_container
