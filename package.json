@@ -1,6 +1,6 @@
 {
-  "name": "demop",
-  "version": "0.0.2",
+  "name": "demo node.js, mariadb, docker & git/github",
+  "version": "0.0.3",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
@@ -14,6 +14,7 @@
     "morgan": "^1.9.0",
     "nodemon": "^3.1.9",
     "path": "^0.12.7",
-    "request": "^2.87.0"
+    "request": "^2.87.0",
+    "mariadb": "^3.0.1"
   }
 }

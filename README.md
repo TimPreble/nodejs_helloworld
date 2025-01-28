@@ -7,6 +7,8 @@ Simple overview of use/purpose.
 An in-depth paragraph about your project and overview of use.
 
 ## Getting Started
+Note: 
+Development with MariaDB was closer to ANSI SQL standard and MS SQL Server than PostgreSQL for our team, and it was easier to adapt our MS SQL ...
 
 ### Dependencies
 
