@@ -6,4 +6,25 @@ services:
       - "300:3000"
     container_name: nodejs_helloworld_container
 
-# Add REDIS
+  mariadb:
+    container_name: mariadb_demo
+    image: mariadb:latest 
+    ports:
+      - '3306:3306/tcp'
+      - '3306:3306/udp'
+    restart: unless-stopped
+    volumes:
+      - mariadb-db-demo:/var/lib/mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD= #Put a password here.
+      - TZ=America/New_York
+
+volumes:
+  mariadb-db-demo:
+    driver: local
+
+# Setup Database
+# https://mariadb.com/docs/server/connect/programming-languages/nodejs/example-setup/
+
+# Get data from MariaDb
+# https://mariadb.com/docs/server/connect/programming-languages/nodejs/promise/example/
